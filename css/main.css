@@ -8,6 +8,7 @@ html, body {
 /*-----------HEADER SECTION------------*/
 .nav{
     position: fixed;
+    
 }
 
 
@@ -15,6 +16,7 @@ html, body {
 .headerBackground{
     padding-left: 0% !important;
     padding-right: 0% !important;
+    
 }
 
 
@@ -29,7 +31,89 @@ video.bg-video {
     /* position: fixed; */
     top: 0;
     left: 0;
-  }
+    z-index: -1;
+
+}
+
+/*@TODO: exclude video for cellphones*/
+
+.logooverlay{
+    position: absolute;
+    width: 50vw;
+    min-height: 50vh;
+    height: 50vh;
+    left: 0;
+    top: 0;
+    /* background: rgba(244, 244, 244, 0.25); */
+    /* background-image: url('../images/pH_logo-horizontal-4transparantheader.jpeg') !important; */
+    z-index: 5;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+  
+}
+
+.overlay{
+    background-color: rgba(244, 244, 244, 0.25);
+    z-index: 3;
+    object-fit: cover;
+    min-width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.mobileBackground{
+    background-image: url(../images/mobilebackground.jpg);
+    background-size: cover;
+    min-width: 100vw;
+    height: 100vh;  
+    z-index: -1;
+    
+    background-repeat: no-repeat;
+
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+    .logooverlay{
+        background-image: url('../images/pH_logo-horizontal-4transparantheader.jpeg');
+    }
+    .mobileBackground{
+        display: none;
+    }
+}
+
+@media(max-aspect-ratio: 16/9){
+    .logooverlay{
+        background-image: url('../images/pH_logo-horizontal-4transparantheader.jpeg');
+    }
+    .mobileBackground{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+    video.bg-video{
+        display: none;
+    }
+    .logooverlay{
+        background-image: url('../images/mobileLogoConotation.png');
+        top: 60% !important;
+    }
+    .mobileBackground{
+        display: inherit;
+    }
+}
+
+
+
 
 
 
