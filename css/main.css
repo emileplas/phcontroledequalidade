@@ -110,6 +110,17 @@ video.bg-video {
     .mobileBackground{
         display: inherit;
     }
+    /* .p-5{
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    .fillBlock{
+        visibility: hidden;
+        
+    } */
+  
 }
 
 
@@ -131,6 +142,20 @@ video.bg-video {
 
     height: 433px;
  }
+
+ @media (max-width: 767px){
+    .p-5{
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    .fillBlock{
+        visibility: hidden;
+        
+    }
+  
+}
 
 /*-----------PORTFOLIO SECTION------------*/
 
