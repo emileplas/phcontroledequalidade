@@ -3,15 +3,22 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    scroll-padding-top: 90px;
+    scroll-behavior:smooth;
 }
+
+
+
 
 /*-----------HEADER SECTION------------*/
-.nav{
+/* .nav{
     position: fixed;
     
+} */
+
+.fixed-top{
+   overflow-x: hidden !important;
 }
-
-
 
 .headerBackground{
     padding-left: 0% !important;
@@ -20,9 +27,9 @@ html, body {
 }
 
 
-.headerText h1{
+/* .headerText h1{
     color: orange;
-}
+} */
 
 video.bg-video {
     object-fit: cover;
@@ -110,16 +117,7 @@ video.bg-video {
     .mobileBackground{
         display: inherit;
     }
-    /* .p-5{
-        padding-top: 16px !important;
-        padding-bottom: 16px !important;
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
-    }
-    .fillBlock{
-        visibility: hidden;
-        
-    } */
+
   
 }
 
@@ -134,9 +132,6 @@ video.bg-video {
     background-color: white;
 }
 
-.about h1{
-    color:orange;
-}
 
 .about img{
 
@@ -151,8 +146,10 @@ video.bg-video {
         padding-right: 3rem !important;
     }
     .fillBlock{
-        visibility: hidden;
-        
+        visibility: collapse;
+    }
+    .about img{
+        max-width: 50%;
     }
   
 }
