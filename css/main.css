@@ -222,23 +222,59 @@ video.bg-video {
 
 .testimonials{
   
-    min-height: 45rem !important;
+    min-height: 670px !important;
+    padding-bottom: 15px;
+}
+
+.carousel-inner{
+    margin-left: 25%;
+    width: 100%;
+    height: auto !important;
+    align-items: center !important;
+}
+
+.carousel-item img{
+    height: 400px !important;
+    width: auto !important;
+    padding-bottom: 5rem!important;
   
 }
+
+.carousel-item h2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1,1rem;
+    color: #54546c;
+    
+}
+
+.carousel-item h3{
+    font-size: 1rem;
+    color: #848494;
+    
+}
+
+.carousel-item i{
+    padding-top: 2rem;
+  
+}
+
+
+
 
 .carousel-item {
     width: 50%;
 }
 
 
-.carousel .carousel-indicators li {
+/* .carousel .carousel-indicators li {
     background-color: #fff;
     background-color: rgba(70, 70, 70, 0.25);
   }
   
   .carousel .carousel-indicators .active {
     background-color: #444;
-  }
+  } */
 
 
 
