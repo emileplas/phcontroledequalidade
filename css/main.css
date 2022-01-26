@@ -218,7 +218,31 @@ video.bg-video {
 
 }
 
-/*-----------PORTFOLIO SECTION------------*/
+/*-----------TESTIMONIALS SECTION------------*/
+
+.testimonials{
+  
+    min-height: 45rem !important;
+  
+}
+
+.carousel-item {
+    width: 50%;
+}
+
+
+.carousel .carousel-indicators li {
+    background-color: #fff;
+    background-color: rgba(70, 70, 70, 0.25);
+  }
+  
+  .carousel .carousel-indicators .active {
+    background-color: #444;
+  }
+
+
+
+
 
 .icon img{
     height: 300px;
