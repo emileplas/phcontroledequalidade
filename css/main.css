@@ -3,7 +3,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 95px;
     scroll-behavior:smooth;
 }
 
@@ -140,8 +140,10 @@ video.bg-video {
 
  @media (max-width: 767px){
     .p-5{
-        padding-top: 16px !important;
-        padding-bottom: 16px !important;
+        /* padding-top: 16px !important; */
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        /* padding-bottom: 16px !important; */
         padding-left: 3rem !important;
         padding-right: 3rem !important;
     }
@@ -149,9 +151,71 @@ video.bg-video {
         visibility: collapse;
     }
     .about img{
-        max-width: 50%;
+        max-width: 75%;
+        height: auto !important;
     }
   
+}
+
+/*-----------SERVICES SECTION------------*/
+
+.services{
+    color: #1c2444;
+    min-height: 45rem !important;
+  
+}
+
+
+.services h1{
+    margin-top: 1.5rem;
+}
+
+.services ul{
+    padding-top: 3rem;
+    padding-left: 4rem;
+    
+}
+
+.services li{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+ 
+}
+
+.service-row-browser{
+    padding-bottom: 1.5rem  !important;
+    visibility: visible;
+}
+
+.service-row-mobile{
+    display: none;
+}
+
+@media (max-width: 767px){
+    .pt-5{
+        /* padding-top: 16px !important; */
+        padding-top: 0.5rem !important;
+        /* padding-bottom: 0.5rem !important;
+        /* padding-bottom: 16px !important; */
+        /* padding-left: 3rem !important;
+        padding-right: 3rem !important;  */
+    }
+    .pb-5{
+        padding-bottom: 0.5rem !important;
+    }
+    .services ul{
+        padding-top: 0rem !important;
+        padding-bottom: 0rem;
+    }
+    .service-row-browser{
+        display: none;
+    }
+    .service-row-mobile{
+        display: block;
+        padding-right: 1rem !important;
+        padding-bottom: 3rem;
+    }
+
 }
 
 /*-----------PORTFOLIO SECTION------------*/
