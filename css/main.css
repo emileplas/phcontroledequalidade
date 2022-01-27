@@ -222,8 +222,12 @@ video.bg-video {
 
 .testimonials{
   
-    min-height: 670px !important;
+    min-height: 750px !important;
     padding-bottom: 15px;
+}
+
+.carousel{
+    min-height: 700px !important;
 }
 
 .carousel-inner{
@@ -282,15 +286,28 @@ video.bg-video {
 }
 
 @media (max-width: 767px){
-    /* .carousel-buttons{
-       
-        
+   
+    .testimonials{
+        min-height: 850px !important;
+    }
 
-    } */
+    .carousel{
+        min-height: 800px !important;
+    }
+
+    .carousel-item i{
+        padding-top: 2rem;
+  
+    }
+
+    .carousel-buttons{
+        bottom: 70%
+    }
+
     .swipe-indicator{
         display: inline;
         position: absolute; 
-        bottom: 42%; 
+        bottom: 64%; 
         font-size: 0.70rem;
         font-style: italic;
         opacity: 0.65;
@@ -328,7 +345,7 @@ video.bg-video {
 
 
     .carousel-item img{
-        height: auto !important;
+        height: 100% !important;
         width: 70% !important;
     }
 }
