@@ -259,24 +259,70 @@
     <!--START OF CONTACT FORM-->
     <div class="contact container-fluid my-4">
         <div class="row">
-            <!--overlay contact form-->
-            <div class="overlayContact"></div>
-
-            <!--title-->
-            <h1 class="text-center p-3">Contact us</h1>
-            <p>We corgis don't have a phone but you can write us an e-mail</p>
-            <!--first column of about section-->
+            <div class="row">
+                <!--title-->
+                <h1 class="text-center p-3">Contato</h1>
+                
+            </div>
+    
+            <hr style='align-content: center; width:50%; margin-left: auto; margin-right: auto;'>          
+        </div>
+        <div class="row justify-content-md-center">
             
-                        
+            <a type="submit" id="left-contact-button" class="btn btn-lg btn-secondary easy-contact-button pt-3" href="mailto:raphaela@phcontroledequalidade.com">Via e-mail</a>
+            <a type="submit" class="btn btn-lg btn-secondary easy-contact-button pt-3" href="https://wa.me/556184411903">Via WhatsApp</a>
+        </div>
+
+        <div class="row justify-content-md-center contact-adress">
+            <div class="col-md-5 pb-2">
+                <h2 class="pb-3 pt-5">Contact us:</h2>
+                <p><img class='contact-icons' src='./icons/phone.png'><b>Phone: </b><a href='tel:+5561984411903' style='color:#eab4c4'>+55 61984411903</a></p>
+
+                <img class='contact-icons' src='./icons/mail.png'><b>E-mail: </b><a href='mailto:raphaela@phcontroledequalidade.com' style='color:#eab4c4'>raphaela@phcontroledequalidade.com</a>
+
+                <h2 class="pb-3 pt-5">Address</h2>
+                <p>
+                    Setor Hoteleiro Norte, quadra 02, Bloco F, sala 1015 - 
+                    <br>Executive office tower
+                    <br>Asa norte
+                    <br>Brasília/ Distrito Federal
+                    <br>Brasil
+
+                </p>
+
+            </div>
+            <div class="col-md-5 pb-2">
+                <h2 class="pb-3 pt-5">Get in touch</h2>
+                <form class="pb-4">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="content" class="form-label">Content</label>
+                        <textarea type="text" class="form-control" id="content" aria-describedby="emailHelp" rows="5" required></textarea>
+                    </div>
+ 
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                  </form>
+            </div>
+        </div>
         </div>
     </div>
     <!--END OF CONTACT FORM-->
     </main>
     <!--end of main-->
+    <footer>
 
-
+    </footer>
     <!--scripts for bootstrap-->
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
+
 </html>

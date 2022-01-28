@@ -327,6 +327,7 @@ video.bg-video {
 
     #left-button{
         left: 5%;
+        margin-left: 0% !important;
 
       
     }
@@ -356,15 +357,6 @@ video.bg-video {
 }
 
 
-/* .carousel .carousel-indicators li {
-    background-color: #fff;
-    background-color: rgba(70, 70, 70, 0.25);
-  }
-  
-  .carousel .carousel-indicators .active {
-    background-color: #444;
-  } */
-
 
 
 
@@ -381,19 +373,57 @@ video.bg-video {
 /*-----------PORTFOLIO SECTION------------*/
 
 .contact{
-    background-image: url('/images/contactformBackground.jpg');
+    /* background-image: url('/images/contactformBackground.jpg'); */
     /*background-attachment: fixed;*/
-    background-size: cover;
-    background-position: center;
+    /* background-size: cover;
+    background-position: center; */
+    background-color: #333a57;
+    color: rgba(255, 255, 255, 0.55);
+    
 }
 
-/* .overlayContact{
-    background-image: url('/images/contactformOverlap.png');
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
+.easy-contact-button{
+    max-width: 15%;
+    margin-right: 2%;
 
-    height: 100vh;
-   } */
+
+}
+
+.contact-icons{
+    filter: invert(100%);
+    margin-right: 7px;
+    height: 20px;
+
+}
+
+@media (max-width: 767px){
+   .contact h2 {
+        padding-top: 0.5rem !important;
+        margin-top: 5%;
+        
+   }
+
+   .contact-adress{
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+   }
+
+   .easy-contact-button{
+        min-width: 110px;
+        height: auto;
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+        line-break: strict;
+        word-spacing: 110px;
+        margin-bottom: 5%;
+        
+   }
+
+
+
+   #left-contact-button{
+    margin-left: 18%;
+}
+
+}
