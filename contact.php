@@ -21,10 +21,10 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'info@linebyline.tech';//<== update the email address
-$email_subject = "New Form submission";
-$email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".
+$email_from = 'postman@linebyline.tech';//<== update the email address
+$email_subject = "New message via your website contact form";
+$email_body = "You have received a new message from the following website visitor: $name.\n".
+    "The content of the message is:\n $message".
     
 $to = "emile.plas@linebyline.tech";//<== update the email address
 $headers = "From: $email_from \r\n";
