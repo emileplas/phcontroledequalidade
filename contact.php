@@ -23,12 +23,11 @@ if(IsInjected($visitor_email))
 
 $email_from = 'postman@linebyline.tech';//<== update the email address
 $email_subject = "New message via your website contact form";
-$email_body = "You have received a new message from the following website visitor: $name.\n".
-    "The content of the message is:\n $message".
+$email_body = "You have received a new message from the following website visitor (name): $name.\n\nThe visitor used the e-mail address: $visitor_email\n\nThe content of the message is: \n\n $message.";
     
 $to = "emile.plas@linebyline.tech";//<== update the email address
 $headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
+// $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
