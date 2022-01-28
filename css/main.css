@@ -357,20 +357,13 @@ video.bg-video {
 }
 
 
-
-
-
-
 .icon img{
     height: 300px;
 }
 
 
-/*-----------PORTFOLIO SECTION------------*/
 
-/*THERE IS NOTHING HERE YET*/
-
-/*-----------PORTFOLIO SECTION------------*/
+/*-----------CONTACT SECTION------------*/
 
 .contact{
     /* background-image: url('/images/contactformBackground.jpg'); */
@@ -427,4 +420,19 @@ video.bg-video {
     margin-left: 18%;
 }
 
+}
+
+
+/*-----------FOOTER SECTION------------*/
+
+footer{
+    background-color: #8c94a4;
+    color: whitesmoke;
+
+}
+
+.footer-text{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
 }
