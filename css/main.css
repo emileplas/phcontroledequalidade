@@ -11,10 +11,13 @@ html, body {
 
 
 /*-----------HEADER SECTION------------*/
-/* .nav{
-    position: fixed;
-    
-} */
+.nav-link:hover{
+    color: #eab4c4 !important;
+}
+
+#navbar-contact-button{
+    padding-top: 13px;
+}
 
 .fixed-top{
    overflow-x: hidden !important;
@@ -366,12 +369,9 @@ video.bg-video {
 /*-----------CONTACT SECTION------------*/
 
 .contact{
-    /* background-image: url('/images/contactformBackground.jpg'); */
-    /*background-attachment: fixed;*/
-    /* background-size: cover;
-    background-position: center; */
     background-color: #333a57;
     color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 0px !important;
     
 }
 
@@ -426,13 +426,30 @@ video.bg-video {
 /*-----------FOOTER SECTION------------*/
 
 footer{
-    background-color: #8c94a4;
-    color: whitesmoke;
-
+    background-color: #545c74;
+    color: #8c94a4;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: var(--bs-font-sans-serif);
 }
 
 .footer-text{
-    padding-left: 10px;
+    /* padding-left: 1,5rem; */
     padding-bottom: 10px;
+    padding-top: 10px;
     margin-bottom: 0px;
+
+    
+    
+}
+
+footer a{
+    color: #8c94a4;
+}
+
+footer a:hover{
+    color: #eab4c4;
 }
