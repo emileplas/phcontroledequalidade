@@ -390,6 +390,10 @@ video.bg-video {
 
 }
 
+.form-success-message{
+    display: block;
+}
+
 @media (max-width: 767px){
    .contact h2 {
         padding-top: 0.5rem !important;

@@ -34,9 +34,9 @@ mail($to,$email_subject,$email_body,$headers);
 // header('Location: thank-you.html');
 echo "<script>
     function formSuccess(){
-        var popupwindow = window.open('form-success.html','popup','width=600,height=146');
+        window.open('index.html#contact', '_self')
+        document.getElementById('form-success-message').style.display = 'block';
 
-        window.open('index.html', '_self')
     }
 
 formSuccess()
