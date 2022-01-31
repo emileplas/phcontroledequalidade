@@ -391,7 +391,7 @@ video.bg-video {
 }
 
 .form-success-message{
-    display: block;
+    display: none;
 }
 
 @media (max-width: 767px){

@@ -287,7 +287,7 @@
             </div>
             <div class="col-md-5 pb-2">
                 <h2 class="pb-3 pt-5">Get in touch</h2>
-                <form class="pb-4" id="contact-form" method="post" action="contact.php" role="form">
+                <form class="pb-4" id="contact-form" role="form" onsubmit="formSubmit(event)">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" name="name" required>
@@ -328,7 +328,44 @@
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
    
+    <script>
+        function formSubmit(event) {
 
+            /* Prevent button causing default browser submit */
+            event.preventDefault();
+
+            /* Get form element */
+            const form = document.getElementById('contact-form');
+
+            /* Create form data object from form element which contains post data */
+            let formData = new FormData(form);
+
+            /* Issue "ajax request" to server. Change /post-to-url to the appropriate 
+            url on your server */
+            fetch('/contact.php', {
+                body: formData,
+                method: "post"
+            })
+            .then(function() {
+                /* When submit successfully completed, hide form */
+                // form.style.display = "none";
+
+                /* Show success message */
+                // const successMessage = document.getElementById('success-message');
+                // successMessage.style.display = 'block';
+                document.getElementById('form-success-message').style.display = 'block';
+            })
+            .catch(function(error) {
+                console.log('Error', error);
+            });
+
+
+    }
+
+
+
+
+    </script>
   
 
 

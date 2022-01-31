@@ -32,16 +32,15 @@ $headers = "From: $email_from \r\n";
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
 // header('Location: thank-you.html');
-echo "<script>
-    function formSuccess(){
-        window.open('index.html#contact', '_self')
-        document.getElementById('form-success-message').style.display = 'block';
+// echo "<script>
+//     function formSuccess(){
+//         window.open('index.html#contact', '_self')
+//     } 
 
-    }
 
-formSuccess()
+//     formSuccess();
 
-</script>";
+// </script>";
 // header('Location: index.html');
 
 // Function to validate against any email injection attempts
