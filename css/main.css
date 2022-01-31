@@ -457,3 +457,12 @@ footer a{
 footer a:hover{
     color: #eab4c4;
 }
+
+@media (max-width: 767px){
+    .footer-text{
+        /* padding-left: 1,5rem; */
+        padding-left: 4.5rem !important;
+        padding-right: 3rem !important;
+        
+    }
+}
