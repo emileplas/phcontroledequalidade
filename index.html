@@ -51,7 +51,7 @@
                     <li class="nav-item">
                         <a class="nav-link m-2" href="#testimonials">Depoimentos</a>
                     </li>
-                    <a id="navbar-contact-button" class="btn btn-secondary" type="submit" href="#contact">Contato</a>
+                    <a id="navbar-contact-button" class="btn btn-secondary" type="submit" href="#contact" aria-label="contact button">Contato</a>
                     </ul>
                 </div>
             </div>
@@ -222,7 +222,7 @@
 
 
                 
-                <button id='left-button' class="carousel-buttons" data-bs-target="#carousel" data-bs-slide="prev" ><img src='./icons/previous.png' ></button>
+                <button id='left-button' class="carousel-buttons" data-bs-target="#carousel" data-bs-slide="prev" aria-label="slide carousel left button"><img src='./icons/previous.png' ></button>
                 <p id='left-swipe-indicator' class="swipe-indicator">Swipe left</p>
                  <!-- <div class="carousel-inner" style="left: 50%;"> -->
                  <div class="carousel-inner" style="margin-left: 25%;">
@@ -247,7 +247,7 @@
                     </div>
                 </div>
 
-                <button id='right-button' class='carousel-buttons' data-bs-target="#carousel" data-bs-slide="next"><img src='./icons/next.png'></button>
+                <button id='right-button' class='carousel-buttons' data-bs-target="#carousel" data-bs-slide="next" aria-label="slipe carousel right button"><img src='./icons/next.png'></button>
                 <p id='right-swipe-indicator' class="swipe-indicator">Swipe right</p>
             </div>
      
@@ -272,8 +272,8 @@
         </div>
 
         <div class="row justify-content-md-center">
-            <a type="submit" id="left-contact-button" class="btn btn-lg btn-secondary easy-contact-button pt-3" href="mailto:raphaela@phcontroledequalidade.com">E-mail</a>
-            <a type="submit" class="btn btn-lg btn-secondary easy-contact-button pt-3" href="https://wa.me/556184411903">WhatsApp</a>
+            <a type="submit" id="left-contact-button" class="btn btn-lg btn-secondary easy-contact-button pt-3" href="mailto:raphaela@phcontroledequalidade.com" aria-label="contact via email">E-mail</a>
+            <a type="submit" class="btn btn-lg btn-secondary easy-contact-button pt-3" href="https://wa.me/556184411903" aria-label="contact via whatsapp">WhatsApp</a>
         </div>
 
         <div class="row justify-content-md-center contact-adress">
@@ -310,7 +310,7 @@
                         <textarea type="text" class="form-control" id="message" name="message" aria-describedby="emailHelp" rows="5" required></textarea>
                     </div>
  
-                    <button name="submit" value="submit" type="submit" class="btn btn-secondary">Enviar</button>
+                    <button name="submit" value="submit" type="submit" class="btn btn-secondary" aria-label="send form">Enviar</button>
                   </form>
                   <div id="form-success-message" class="form-success-message alert alert-success alert-dismissible fade show" role="alert">
                     <h4 class="alert-heading">Obrigada pelo interesse!</h4>
@@ -318,7 +318,7 @@
                     <p></p>
                     <strong>Seu formulário foi submetido com sucesso.</strong>
                     <br>Nossa equipe entrará em contato em breve.
-                    <button onclick="document.getElementById('form-success-message').style.display = 'none';" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button onclick="document.getElementById('form-success-message').style.display = 'none';" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close form submitted message"></button>
                 </div>
             </div>
         </div>
@@ -333,7 +333,7 @@
         </div>
     </footer>
     <!--scripts for bootstrap-->
-    <!-- <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script> -->
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
    
     <script>
