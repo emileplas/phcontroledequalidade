@@ -60,9 +60,9 @@
         <!--HEADER PICTURE WITH OVERLAY AND TEXT-->
         <div class="container-fluid headerBackground">
             <div class="logooverlay top-50 start-50 translate-middle"></div>
-            <video class="bg-video" id="video" playsinline preload="none" muted loop poster="./images/poster-video.webp">
-                <source src="./video/moviebackground5.mp4" type="video/mp4">
-                <source src="./video/moviebackground5.webm" type="video/webm">
+            <video class="bg-video" id="video" playsinline  muted loop poster="./images/poster-video.webp" autoplay>
+                <source src="./video/moviebackground.mp4" type="video/mp4">
+                <source src="./video/moviebackground.webm" type="video/webm">
                 <!--@TODO: insert additional movie sources-->
                 Your browser does not support this video
             </video>
@@ -71,6 +71,21 @@
             <div class="mobileBackground"></div>
     
         </div>
+            <!--script to guarantee that movie is not loaded on mobile devices-->
+    <script>
+        window.onload = addAutoplay();
+        var videoLocation  = document.getElementById("video");
+
+        function addAutoplay() {
+            if(window.innerWidth < 767){
+                document.getElementById('video').remove();
+                // document.getElementById("video").removeAttribute("autoplay","");
+                // document.getElementById('video').removeAttribute('poster','./images/poster-video.webp');
+                // // poster="./images/poster-video.webp"
+                // document.getElementById("video").setAttribute("preload","none");
+        };
+        }
+    </script>
     </header>
     <!--END OF HEADER-->
 
@@ -127,7 +142,7 @@
 
             <div class="row justify-content-md-center">
                 <!--left column-->
-                <p class='col-md-5 p-5'><img class="founderImage img-fluid rounded mx-auto d-block" src="./images/fotoraphaela.webp" alt="photo of Raphaela Cenci Vidal"></p>
+                <p class='col-md-5 p-5'><img class="founderImage img-fluid rounded mx-auto d-block" src="./images/fotoraphaela.webp" alt="photo of Raphaela Cenci Vidal" loading="lazy"></p>
    
                 <!-- right column-->
                 <div class='col-md-5 p-5'>
@@ -221,32 +236,32 @@
 
 
                 
-                <button id='left-button' class="carousel-buttons" data-bs-target="#carousel" data-bs-slide="prev" aria-label="slide carousel left button"><img src='./icons/previous.png' alt="previous icon"></button>
+                <button id='left-button' class="carousel-buttons" data-bs-target="#carousel" data-bs-slide="prev" aria-label="slide carousel left button"><img src='./icons/previous.png' alt="previous icon" loading="lazy"></button>
                 <p id='left-swipe-indicator' class="swipe-indicator">Swipe left</p>
                  <!-- <div class="carousel-inner" style="left: 50%;"> -->
                  <div class="carousel-inner" style="margin-left: 25%;">
 
                     <div class="carousel-item active" style="text-align: center !important;">
-                        <img src="./images/testimonials/cerradaoagro.webp" class="mx-auto d-block w-50"  style="margin-left: 25%;" alt="logo cerradao agro">
+                        <img src="./images/testimonials/cerradaoagro.webp" class="mx-auto d-block w-50"  style="margin-left: 25%;" alt="logo cerradao agro" loading="lazy">
                         <i>“Ter a Raphaela Cenci Vidal como nosso consultora, para mim, foi uma segurança. A responsabilidade por parte dela é muito grande, isto deixa a gente muito confortável e seguro dos nossos processos. O trabalho dela veio a agregar muito ao nosso sistema de produção. Sou muito grato a tudo que ela fez e faz por nós, queremos ter essa parceria por muito tempo ainda.”</i>
                         <h2>Otacílio Ferreira</h2>
                         <h3>proprietário da Cerradão Agro, Formosa/GO</h3>
                     </div>
                     <div class="carousel-item" style="text-align: center !important;">
-                        <img src="./images/testimonials/racoesportoalegre.webp" class="mx-auto d-block w-50" style="margin-left: 25%;" alt="logo racoes porto alegre">
+                        <img src="./images/testimonials/racoesportoalegre.webp" class="mx-auto d-block w-50" style="margin-left: 25%;" alt="logo racoes porto alegre" loading="lazy">
                         <i>“Trabalhamos com a Raphaela há alguns meses . O atendimento dela é impecável e sempre está disposta a nos ajudar. Agradecemos a toda disposição e pelo trabalho que vem desempenhando em nossa empresa.”</i>
                         <h2>Eduardo Carneiro</h2>
                         <h3>Administrador responsável pela Rações Porto Alegre, Ponte Nova/ MG.</h3>
                     </div>
                     <div class="carousel-item" style="text-align: center !important;">
-                        <img src="./images/testimonials/racoescriador.webp" class="mx-auto d-block w-50" style="margin-left: 25%;" alt="logo racoes criador">
+                        <img src="./images/testimonials/racoescriador.webp" class="mx-auto d-block w-50" style="margin-left: 25%;" alt="logo racoes criador" loading="lazy">
                         <i>“A Raphaela é uma profissional atuante, participativa e procura sempre antecipar os problemas do dia-a-dia.”</i>
                         <h2>Nelson Campos</h2>
                         <h3>Zootecnista responsável pela Rações Criador, Luziânia/GO.</h3>
                     </div>
                 </div>
 
-                <button id='right-button' class='carousel-buttons' data-bs-target="#carousel" data-bs-slide="next" aria-label="slipe carousel right button"><img src='./icons/next.png' alt="logo next"></button>
+                <button id='right-button' class='carousel-buttons' data-bs-target="#carousel" data-bs-slide="next" aria-label="slipe carousel right button"><img src='./icons/next.png' alt="logo next" loading="lazy"></button>
                 <p id='right-swipe-indicator' class="swipe-indicator">Swipe right</p>
             </div>
      
@@ -278,9 +293,9 @@
         <div class="row justify-content-md-center contact-adress">
             <div class="col-md-5 pb-2">
                 <h2 class="pb-3 pt-5">Contato direto</h2>
-                <p><img class='contact-icons' src='./icons/phone.png'><b>Telefone: </b><a href='tel:+5561984411903' style='color:#eab4c4' alt="contact icon phone">+55 61984411903</a></p>
+                <p><img class='contact-icons' src='./icons/phone.png' loading="lazy"><b>Telefone: </b><a href='tel:+5561984411903' style='color:#eab4c4' alt="contact icon phone" >+55 61984411903</a></p>
 
-                <img class='contact-icons' src='./icons/mail.png'><b>E-mail: </b><a href='mailto:raphaela@phcontroledequalidade.com' style='color:#eab4c4' alt="contact icon email">raphaela@phcontroledequalidade.com</a>
+                <img class='contact-icons' src='./icons/mail.png' loading="lazy"><b>E-mail: </b><a href='mailto:raphaela@phcontroledequalidade.com' style='color:#eab4c4' alt="contact icon email">raphaela@phcontroledequalidade.com</a>
 
                 <h2 class="pb-3 pt-5">Endereço</h2>
                 <p>
@@ -375,19 +390,7 @@
 
     </script>
  
-    <!--script to guarantee that movie is not loaded on mobile devices-->
-    <script>
-        window.onload = addAutoplay();
-        var videoLocation  = document.getElementById("video");
-        function addAutoplay() {
-            if(window.innerWidth >992){
-                document.getElementById("video").setAttribute("autoplay","");
-                // document.getElementById('video').setAttribute('poster','./images/poster-video.webp');
-                // poster="./images/poster-video.webp"
-                document.getElementById("video").removeAttribute("preload","");
-        };
-        }
-    </script>
+
         
   
 
