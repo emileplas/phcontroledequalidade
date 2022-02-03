@@ -387,7 +387,8 @@ video.bg-video {
 
 .contact{
     background-color: #333a57;
-    color: rgba(255, 255, 255, 0.55);
+    /* color: rgba(255, 255, 255, 0.55); */
+    color: #C9D5D4;
     margin-bottom: 0px !important;
     
 }
@@ -452,7 +453,8 @@ video.bg-video {
 
 footer{
     background-color: #545c74;
-    color: #8c94a4;
+    /* color: #8c94a4; */
+    color: #C9D5D4;
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.5;
@@ -472,7 +474,7 @@ footer{
 }
 
 footer a{
-    color: #8c94a4;
+    color: #C9D5D4;
 }
 
 footer a:hover{
