@@ -1,10 +1,18 @@
 /*CSS INDEPENT OF BOOTSTRAP*/
 
+
+
+/*-----------GENERAL------------*/
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
     scroll-padding-top: 95px;
     scroll-behavior:smooth;
+}
+
+p{
+    text-align: justify;
 }
 
 
