@@ -45,7 +45,7 @@ video.bg-video {
 
 }
 
-/*@TODO: exclude video for cellphones*/
+
 
 .logooverlay{
     position: absolute;
@@ -93,7 +93,7 @@ video.bg-video {
 
 @media (min-aspect-ratio: 16/9) {
     .logooverlay{
-        background-image: url('../images/pH_logo-horizontal-4transparantheader.jpeg');
+        background-image: url('../images/pH_logo-horizontal-4transparantheader.webp');
     }
     .mobileBackground{
         display: none;
@@ -102,7 +102,7 @@ video.bg-video {
 
 @media(max-aspect-ratio: 16/9){
     .logooverlay{
-        background-image: url('../images/pH_logo-horizontal-4transparantheader.jpeg');
+        background-image: url('../images/pH_logo-horizontal-4transparantheader.webp');
     }
     .mobileBackground{
         display: none;
