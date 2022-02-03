@@ -80,7 +80,7 @@ video.bg-video {
 }
 
 .mobileBackground{
-    background-image: url(../images/mobilebackground.jpg);
+    background-image: url('../images/mobilebackground.webp');
     background-size: cover;
     min-width: 100vw;
     height: 100vh;  
