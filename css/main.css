@@ -168,12 +168,15 @@ video.bg-video {
         padding-right: 3rem !important;
     }
     .fillBlock{
-        visibility: collapse;
+        display: none;
     }
     .about img{
         max-width: 75%;
         height: auto !important;
+        margin-top: 1rem;
     }
+
+
   
 }
 
