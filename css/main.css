@@ -42,6 +42,7 @@ video.bg-video {
     top: 0;
     left: 0;
     z-index: -1;
+    display: none;
 
 }
 
@@ -92,6 +93,9 @@ video.bg-video {
 
 
 @media (min-aspect-ratio: 16/9) {
+    video.bg-video {
+        display: block;
+    }
     .logooverlay{
         background-image: url('../images/pH_logo-horizontal-4transparantheader.webp');
     }
@@ -101,6 +105,9 @@ video.bg-video {
 }
 
 @media(max-aspect-ratio: 16/9){
+    video.bg-video {
+        display: block;
+    }
     .logooverlay{
         background-image: url('../images/pH_logo-horizontal-4transparantheader.webp');
     }
@@ -114,11 +121,11 @@ video.bg-video {
         display: none;
     }
     .logooverlay{
-        background-image: url('../images/mobileLogoConotation.png');
+        background-image: url('../images/mobileLogoConotation.webp');
         top: 60% !important;
     }
     .mobileBackground{
-        display: inherit;
+        display: block;
     }
 
   
