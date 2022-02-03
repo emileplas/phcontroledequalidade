@@ -25,6 +25,8 @@ p{
 
 #navbar-contact-button{
     padding-top: 13px;
+    background-color: #eab4c4;
+    -webkit-appearance: none; /*in order to make sure that the button keeps its color in safari*/
 }
 
 .fixed-top{
@@ -394,6 +396,7 @@ video.bg-video {
     max-width: 15%;
     margin-right: 2%;
     margin-top: 1rem;
+    -webkit-appearance: none; /*in order to make sure that the button keeps its color in safari*/
 
 
 }
@@ -432,6 +435,7 @@ video.bg-video {
         line-break: strict;
         word-spacing: 110px;
         margin-bottom: 5%;
+        
         
    }
 
