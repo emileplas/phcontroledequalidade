@@ -390,9 +390,15 @@ video.bg-video {
     /* color: rgba(255, 255, 255, 0.55); */
     color: #D8E1DF;
     margin-bottom: 0px !important;
+    margin-top:1.5rem !important;
     
 }
 
+.contact h1{
+    margin: 1,5rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 1,5rem !important;
+}
 .easy-contact-button{
     max-width: 15%;
     margin-right: 2%;
