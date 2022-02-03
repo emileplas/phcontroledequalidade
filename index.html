@@ -13,14 +13,13 @@
 
     <!--import other CSS files-->
     <link rel="stylesheet" type="text/css" href="css/main.css"></link>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+
     <link rel="stylesheet" href="css/animate.css"/>
 
     <!--favicon-->
     <link rel="icon" type="image/x-icon" href="./images/logofavicon.ico">
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
 
 </head>
 <body>
@@ -319,7 +318,7 @@
                     <p></p>
                     <strong>Seu formulário foi submetido com sucesso.</strong>
                     <br>Nossa equipe entrará em contato em breve.
-                    <button onclick="window.close()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button onclick="document.getElementById('form-success-message').style.display = 'none';" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             </div>
         </div>
@@ -363,6 +362,7 @@
                 // const successMessage = document.getElementById('success-message');
                 // successMessage.style.display = 'block';
                 document.getElementById('form-success-message').style.display = 'block';
+                document.getElementById('contact-form').reset();
             })
             .catch(function(error) {
                 console.log('Error', error);
