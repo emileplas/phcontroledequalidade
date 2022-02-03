@@ -21,6 +21,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+
 </head>
 <body>
     <!--HEADER WITH NAVBAR-->
@@ -61,11 +62,12 @@
         <!--HEADER PICTURE WITH OVERLAY AND TEXT-->
         <div class="container-fluid headerBackground">
             <div class="logooverlay top-50 start-50 translate-middle"></div>
-            <video class="bg-video" id="video" playsinline autoplay muted loop poster="./images/poster-video.webp">
+            <video class="bg-video" id="video" playsinline preload="none" muted loop poster="./images/poster-video.webp">
                 <source src="./video/moviebackground5.mp4" type="video/mp4">
                 <!--@TODO: insert additional movie sources-->
                 Your browser does not support this video
             </video>
+
             <div class="overlay"></div>
             <div class="mobileBackground"></div>
     
@@ -372,6 +374,21 @@
 
 
     </script>
+ 
+    <!--script to guarantee that movie is not loaded on mobile devices-->
+    <script>
+        window.onload = addAutoplay();
+        var videoLocation  = document.getElementById("video");
+        function addAutoplay() {
+            if(window.innerWidth >992){
+                document.getElementById("video").setAttribute("autoplay","");
+                // document.getElementById('video').setAttribute('poster','./images/poster-video.webp');
+                // poster="./images/poster-video.webp"
+                document.getElementById("video").removeAttribute("preload","");
+        };
+        }
+    </script>
+        
   
 
 
