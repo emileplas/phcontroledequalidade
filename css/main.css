@@ -153,10 +153,13 @@ video.bg-video {
 }
 
 
-.about img{
-
+/* .founderImage{
     height: 433px;
- }
+} */
+
+.founderImage{
+    max-height: 75%;
+}
 
  @media (max-width: 767px){
     .p-5{
@@ -170,9 +173,10 @@ video.bg-video {
     .fillBlock{
         display: none;
     }
-    .about img{
-        max-width: 75%;
-        height: auto !important;
+    .founderImage{
+        
+        max-width: auto !important;
+        min-height: 90% !important;
         margin-top: 1rem;
     }
 
