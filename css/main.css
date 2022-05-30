@@ -197,8 +197,13 @@ video.bg-video {
     margin-top: 1.5rem;
 }
 
+.service-subtitle{
+    font-weight: bold;
+}
+
 .services ul{
-    padding-top: 3rem;
+    text-align: left !important;
+    /* padding-top: 3rem; */
     padding-left: 4rem;
     
 }
@@ -233,15 +238,9 @@ video.bg-video {
     .services ul{
         padding-top: 0rem !important;
         padding-bottom: 0rem;
+        padding-left: 3rem !important;
     }
-    .service-row-browser{
-        display: none;
-    }
-    .service-row-mobile{
-        display: block;
-        padding-right: 1rem !important;
-        padding-bottom: 3rem;
-    }
+
 
 }
 
