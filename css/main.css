@@ -265,8 +265,10 @@ video.bg-video {
 }
 
 .carousel-item img{
-    height: 400px !important;
+    max-height: 400px !important;
+    min-height: 400px !important;
     width: auto !important;
+    max-width: 80% !important;
     padding-bottom: 2rem!important;
   
 }
@@ -372,6 +374,7 @@ video.bg-video {
 
 
     .carousel-item img{
+        min-height: auto !important;
         height: 100% !important;
         width: 70% !important;
     }
