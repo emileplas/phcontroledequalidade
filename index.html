@@ -333,7 +333,15 @@
                     <strong>Seu formulário foi submetido com sucesso.</strong>
                     <br>Nossa equipe entrará em contato em breve.
                     <button onclick="document.getElementById('form-success-message').style.display = 'none';" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close form submitted message"></button>
-                </div>
+                  </div>
+                  <div id="form-no-success-message" class="form-no-success-message alert alert-danger alert-dismissible fade show" role="alert">
+                    <h4 class="alert-heading">Something went wrong</h4>
+                    <hr>
+                    <p></p>
+                    <strong>Seu formulário não foi submetido com sucesso.</strong>
+                    <br>Please wait a moment, or try to contact us directly via our e-mail (raphaela@phcontroledequalidade.com) or via WhatsApp.
+                    <button onclick="document.getElementById('form-success-message').style.display = 'none';" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close form submitted message"></button>
+                  </div>
             </div>
         </div>
         
@@ -351,6 +359,14 @@
     <script src="js/bootstrap.js"></script>
    
     <script>
+        // Function responsible for sending the e-mail via the message contact form.
+        // At the moment the message contact form is submitted, it tries to fetch a php function
+        // in case the php function is not working, it will return a response from which the ok is false.
+        // Otherwise, it should return a possitive ok.
+        // FYI: function does not return a inscanceof error for now.
+        //
+        // In case no errors are thrown, the website will display a form success message
+        // In case the ok response from the php form is negative, a form no success message is displayed.
         function formSubmit(event) {
 
             /* Prevent button causing default browser submit */
@@ -368,15 +384,24 @@
                 body: formData,
                 method: "post"
             })
-            .then(function() {
+            .then(function(response) {
+                
+                if(!response.ok){
+                    document.getElementById('form-no-success-message').style.display = 'block';
+                    document.getElementById('contact-form').reset();
+                }else{
+                    document.getElementById('form-success-message').style.display = 'block';
+                    document.getElementById('contact-form').reset();
+                }
                 /* When submit successfully completed, hide form */
                 // form.style.display = "none";
 
                 /* Show success message */
                 // const successMessage = document.getElementById('success-message');
                 // successMessage.style.display = 'block';
-                document.getElementById('form-success-message').style.display = 'block';
-                document.getElementById('contact-form').reset();
+
+                //document.getElementById('form-success-message').style.display = 'block';
+                //document.getElementById('contact-form').reset();
             })
             .catch(function(error) {
                 console.log('Error', error);

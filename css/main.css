@@ -428,6 +428,10 @@ video.bg-video {
     display: none;
 }
 
+.form-no-success-message{
+    display: none;
+}
+
 @media (max-width: 767px){
    .contact h2 {
         padding-top: 0.5rem !important;

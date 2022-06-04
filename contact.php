@@ -1,9 +1,11 @@
 <?php
 if(!isset($_POST['submit']))
 {
-	//This page should not be accessed directly. Need to submit the form.
+//This page should not be accessed directly. Need to submit the form.
 	echo "error; you need to submit the form!";
 }
+
+//setting the variables
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $message = $_POST['message'];
@@ -21,27 +23,32 @@ if(IsInjected($visitor_email))
     exit;
 }
 
+//variables for the e-mail to client
 $email_from = 'postman@linebyline.tech';//<== update the email address
 $email_subject = "New message via your website contact form";
 $email_body = "You have received a new message from the following website visitor (name): $name.\n\nThe visitor used the e-mail address: $visitor_email\n\nThe content of the message is: \n\n $message.";
-    
+
+//variables for the confirmation e-mail to website user
+$confirmation_email_subject = "We received your question!";
+$confirmation_email_body = "We have received the following message from you via our contact form on our website pH-Controle de Qualidade: \n\n Your name: $name.\n\n Your e-mail: $visitor_email\n\n Your message: \n\n $message. \n\nWe will get in contact as soon as possible! If you would not receive an answer in the coming 2 weeks, don't hesitate to contact us via: raphaela@phcontroledequalidade.com. \n\n This is an automated e-mail. We haven't read your question yet. This is merely a confirmation of the recieval.";
+
+//e-mail of client
 $to = "emile.plas@linebyline.tech";//<== update the email address
 $headers = "From: $email_from \r\n";
-// $headers .= "Reply-To: $visitor_email \r\n";
+
+//headers for confirmation
+$confirmation_headers = "From: raphaela@phcontroledequalidade.com";
+
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
-//done. redirect to thank-you page.
-// header('Location: thank-you.html');
-// echo "<script>
-//     function formSuccess(){
-//         window.open('index.html#contact', '_self')
-//     } 
+mail($visitor_email,$confirmation_email_subject,$confirmation_email_body,$confirmation_headers);
 
+// if (mail($to,$email_subject,$email_body,$headers)) {
+//   return "Message successfully sent!";
+// } else {
+//   return "Message delivery failed...";
+// }
 
-//     formSuccess();
-
-// </script>";
-// header('Location: index.html');
 
 // Function to validate against any email injection attempts
 function IsInjected($str)
