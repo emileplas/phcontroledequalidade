@@ -107,7 +107,8 @@ video.bg-video {
         display: block;
     }
     .logooverlay{
-        background-image: url('../images/pH_logo-horizontal-4transparantheader.webp');
+        /*background-image: url('../images/pH_logo-horizontal-4transparantheader.webp');*/
+        background-image: url('../images/logoConotationCropToContent.webp');
     }
     .mobileBackground{
         display: none;
