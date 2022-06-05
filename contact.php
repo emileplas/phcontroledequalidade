@@ -29,8 +29,10 @@ $email_subject = "New message via your website contact form";
 $email_body = "You have received a new message from the following website visitor (name): $name.\n\nThe visitor used the e-mail address: $visitor_email\n\nThe content of the message is: \n\n $message.";
 
 //variables for the confirmation e-mail to website user
-$confirmation_email_subject = "We received your question!";
-$confirmation_email_body = "We have received the following message from you via our contact form on our website pH-Controle de Qualidade: \n\n Your name: $name.\n\n Your e-mail: $visitor_email\n\n Your message: \n\n $message. \n\nWe will get in contact as soon as possible! If you would not receive an answer in the coming 2 weeks, don't hesitate to contact us via: raphaela@phcontroledequalidade.com. \n\n This is an automated e-mail. We haven't read your question yet. This is merely a confirmation of the recieval.";
+//$confirmation_email_subject = "We received your question!";
+$confirmation_email_subject = "Obrigada pelo contato!";
+//$confirmation_email_body = "We have received the following message from you via our contact form on our website pH-Controle de Qualidade: \n\n Your name: $name.\n\n Your e-mail: $visitor_email\n\n Your message: \n\n $message. \n\nWe will get in contact as soon as possible! If you would not receive an answer in the coming 2 weeks, don't hesitate to contact us via: raphaela@phcontroledequalidade.com. \n\n This is an automated e-mail. We haven't read your question yet. This is merely a confirmation of the recieval.";
+$confirmation_email_body = "Nós recebemos a seguinte mensagem proveniente do seu contato no nosso website: \n\n Seu nome: $name.\n\n Seu e-mail: $visitor_email\n\n Sua mensagem: \n\n $message. \n\n Nossa equipe entrará em contato em breve. Caso precise de uma resposta urgente entre em contato direto via: raphaela@phcontroledequalidade.com. \n\n Essa mensagem é automática e nāo siguinifica que já lemos sua pergunta. Isso é apenas a confirmaçāo de recebimento da mesma.";
 
 //e-mail of client
 $to = "emile.plas@linebyline.tech";//<== update the email address
