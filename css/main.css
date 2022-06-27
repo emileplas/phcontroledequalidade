@@ -257,26 +257,57 @@ video.bg-video {
     overflow: hidden;
     height: 560px;
 
-  }
+}
+
+.content-permanent{
+    color: white;
+    background: rgba(73, 72, 72, 0.353); 
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+
+.content-permanent h3{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.content:hover .content-permanent{
+    opacity: 0;
+}
  
 .content ul{
     color: white;
     padding-left: 1rem;
-    
 }  
 
-  .first-service-container{
+.first-service-container{
     padding-left: 18px;
-  }
+}
   
-  .third-service-container{
+.third-service-container{
     padding-right: 18px;
-  }
+}
 
-  .content .content-overlay {
+.content .content-overlay {
     background: rgba(0,0,0,0.7);
     position: absolute;
-    height: 99%;
+    /* height: 99%; */
     width: 100%;
     left: 0;
     top: 0;
@@ -286,20 +317,20 @@ video.bg-video {
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
-  }
+}
   
-  .content:hover .content-overlay{
+.content:hover .content-overlay{
     opacity: 1;
-  }
+}
   
-  .content-image{
+.content-image{
     width: 100%;
     height: 100%;
     max-height: 100% !important;
     min-width: 100%;
-  }
+}
   
-  .content-details {
+.content-details {
     position: absolute;
     text-align: center;
     padding-left: 1em;
@@ -314,30 +345,30 @@ video.bg-video {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
-  }
+}
   
-  .content:hover .content-details{
+.content:hover .content-details{
     top: 50%;
     left: 50%;
     opacity: 1;
-  }
+}
   
-  .content-details h3{
+.content-details h3{
     color: #fff;
     font-weight: 500;
     letter-spacing: 0.15em;
     margin-bottom: 0.5em;
     text-transform: uppercase;
-  }
+}
   
-  .content-details p{
+.content-details p{
     color: #fff;
     font-size: 0.8em;
-  }
+}
   
-  .fadeIn-bottom{
+.fadeIn-bottom{
     top: 80%;
-  }
+}
 
 
 
