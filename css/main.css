@@ -297,11 +297,11 @@ video.bg-video {
 }  
 
 .first-service-container{
-    padding-left: 18px;
+    /* padding-left: 18px; */
 }
   
 .third-service-container{
-    padding-right: 18px;
+    /* padding-right: 18px; */
 }
 
 .content .content-overlay {
@@ -368,6 +368,11 @@ video.bg-video {
   
 .fadeIn-bottom{
     top: 80%;
+}
+
+.service-picture-implementation{
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 
